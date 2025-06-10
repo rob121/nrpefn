@@ -9,6 +9,7 @@ const (
 	OK       int = iota
 	Warning
 	Critical
+	Unknown
 )
 
 func FloatOK(value float64) {
@@ -39,5 +40,10 @@ func StringWarning(value string) {
 func StringCritical(value string) {
 	fmt.Printf("CRITICAL - %s\n", value)
 	os.Exit(Critical)
+}
+
+func StringUnknown(){
+	fmt.Printf("Unknown - %s\n", value)
+	os.Exit(Unknown)
 }
 
