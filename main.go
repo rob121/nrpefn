@@ -42,7 +42,7 @@ func StringCritical(value string) {
 	os.Exit(Critical)
 }
 
-func StringUnknown(){
+func StringUnknown(value string){
 	fmt.Printf("Unknown - %s\n", value)
 	os.Exit(Unknown)
 }
