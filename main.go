@@ -7,8 +7,8 @@ import (
 
 const (
 	OK       int = iota
-	Warning  int
-	Critical int
+	Warning
+	Critical
 )
 
 func FloatOK(value float64) {
